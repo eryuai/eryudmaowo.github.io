@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #FBF7F0;
+  }
+
+  body {
+    @apply font-body-main text-on-surface antialiased bg-background-warm;
+  }
+
+  ::selection {
+    background-color: #e89b5c;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .material-symbols-outlined.fill {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    @apply h-3 rounded-full overflow-hidden bg-surface-variant;
+  }
+
+  .progress-bar-fill {
+    @apply h-full rounded-full bg-primary-container transition-all duration-1000 ease-out;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-surface-pure rounded-2xl p-6 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(140,79,22,0.12)];
+  }
+
+  /* Tag capsule */
+  .tag {
+    @apply inline-block px-3 py-1 rounded-full text-label-capsule font-label-capsule;
+  }
+
+  /* Masonry */
+  .masonry-grid {
+    column-count: 1;
+    column-gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hide scrollbar */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Page transition */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+}

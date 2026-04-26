@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>《春日的午后与一只橘猫》 - The Cat's Quill</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#534439",
+                        "primary-container": "#e89b5c",
+                        "on-secondary-fixed": "#281903",
+                        "error": "#ba1a1a",
+                        "border-subtle": "#EFE6D8",
+                        "tertiary-container": "#95b594",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#e5d7d0",
+                        "inverse-on-surface": "#fceee6",
+                        "on-secondary-container": "#755f42",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f9ebe4",
+                        "inverse-surface": "#372f2a",
+                        "progress-green": "#A8C8A6",
+                        "tertiary": "#496549",
+                        "primary-fixed": "#ffdcc3",
+                        "secondary-container": "#f9dbb7",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#574329",
+                        "surface-container-low": "#fff1e9",
+                        "primary-fixed-dim": "#ffb77f",
+                        "primary": "#8c4f16",
+                        "secondary": "#705b3e",
+                        "surface-container-highest": "#eee0d8",
+                        "secondary-fixed-dim": "#dfc29f",
+                        "on-primary-container": "#653300",
+                        "on-tertiary-fixed-variant": "#314d33",
+                        "surface-bright": "#fff8f5",
+                        "surface-tint": "#8c4f16",
+                        "background": "#fff8f5",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#2b472d",
+                        "on-primary-fixed-variant": "#6f3900",
+                        "on-background": "#211a16",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#fcdeba",
+                        "surface-container-high": "#f3e5de",
+                        "surface-pure": "#FFFFFF",
+                        "tertiary-fixed": "#caebc8",
+                        "surface": "#fff8f5",
+                        "outline": "#857468",
+                        "on-surface": "#211a16",
+                        "inverse-primary": "#ffb77f",
+                        "text-secondary": "#8B7E74",
+                        "background-warm": "#FBF7F0",
+                        "on-primary-fixed": "#2f1500",
+                        "surface-variant": "#eee0d8",
+                        "on-tertiary-fixed": "#05210b",
+                        "accent-yellow": "#F4C95D",
+                        "outline-variant": "#d8c2b5",
+                        "tertiary-fixed-dim": "#afcfad"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        "section-gap": "4rem",
+                        "gutter": "1.5rem",
+                        "container-max": "1024px",
+                        "card-padding": "1.5rem",
+                        "reading-width": "680px"
+                    },
+                    fontFamily: {
+                        "body-main": ["Noto Serif SC"],
+                        "body-italic": ["Noto Serif SC"],
+                        "h2": ["Noto Serif SC"],
+                        "h1": ["Noto Serif SC"],
+                        "display-title": ["Noto Serif SC"],
+                        "helper-text": ["Noto Serif SC"],
+                        "label-capsule": ["Noto Serif SC"]
+                    },
+                    fontSize: {
+                        "body-main": ["16px", { lineHeight: "1.8", fontWeight: "400" }],
+                        "body-italic": ["16px", { lineHeight: "1.8", fontWeight: "400" }],
+                        "h2": ["22px", { lineHeight: "1.4", fontWeight: "600" }],
+                        "h1": ["28px", { lineHeight: "1.3", fontWeight: "700" }],
+                        "display-title": ["36px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "helper-text": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "label-capsule": ["12px", { lineHeight: "1", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-top-4{top:-1rem}.left-6{left:1.5rem}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-6{margin-bottom:1.5rem}.mb-section-gap{margin-bottom:4rem}.mt-24{margin-top:6rem}.mt-4{margin-top:1rem}.flex{display:flex}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.h-20{height:5rem}.h-auto{height:auto}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-\[45\%\]{max-width:45%}.max-w-reading-width{max-width:680px}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-\[12px\]{border-radius:12px}.rounded-\[20px\]{border-radius:20px}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-\[\#E89B5C\]{--tw-border-opacity:1;border-color:rgb(232 155 92 / var(--tw-border-opacity, 1))}.border-border-subtle{--tw-border-opacity:1;border-color:rgb(239 230 216 / var(--tw-border-opacity, 1))}.border-outline-variant{--tw-border-opacity:1;border-color:rgb(216 194 181 / var(--tw-border-opacity, 1))}.border-stone-200\/50{border-color:rgb(231 229 228 / 0.5)}.bg-\[\#E89B5C\]{--tw-bg-opacity:1;background-color:rgb(232 155 92 / var(--tw-bg-opacity, 1))}.bg-\[\#FAF9F6\]{--tw-bg-opacity:1;background-color:rgb(250 249 246 / var(--tw-bg-opacity, 1))}.bg-background{--tw-bg-opacity:1;background-color:rgb(255 248 245 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(255 241 233 / var(--tw-bg-opacity, 1))}.bg-surface-pure{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.object-cover{object-fit:cover}.p-card-padding{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.px-gutter{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-section-gap{padding-top:4rem;padding-bottom:4rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-body-italic{font-family:Noto Serif SC}.font-body-main{font-family:Noto Serif SC}.font-display-title{font-family:Noto Serif SC}.font-h2{font-family:Noto Serif SC}.font-helper-text{font-family:Noto Serif SC}.font-label-capsule{font-family:Noto Serif SC}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-body-italic{font-size:16px;line-height:1.8;font-weight:400}.text-body-main{font-size:16px;line-height:1.8;font-weight:400}.text-display-title{font-size:36px;line-height:1.2;font-weight:700}.text-h2{font-size:22px;line-height:1.4;font-weight:600}.text-helper-text{font-size:14px;line-height:1.5;font-weight:400}.text-label-capsule{font-size:12px;line-height:1;font-weight:600}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.italic{font-style:italic}.leading-tight{line-height:1.25}.text-\[\#E89B5C\]{--tw-text-opacity:1;color:rgb(232 155 92 / var(--tw-text-opacity, 1))}.text-on-background{--tw-text-opacity:1;color:rgb(33 26 22 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(33 26 22 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(83 68 57 / var(--tw-text-opacity, 1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-stone-600{--tw-text-opacity:1;color:rgb(87 83 78 / var(--tw-text-opacity, 1))}.text-stone-800{--tw-text-opacity:1;color:rgb(41 37 36 / var(--tw-text-opacity, 1))}.text-text-secondary{--tw-text-opacity:1;color:rgb(139 126 116 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-80{opacity:0.8}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-stone-200\/50{--tw-shadow-color:rgb(231 229 228 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-primary-container *::selection{--tw-bg-opacity:1;background-color:rgb(232 155 92 / var(--tw-bg-opacity, 1))}.selection\:text-on-primary-container *::selection{--tw-text-opacity:1;color:rgb(101 51 0 / var(--tw-text-opacity, 1))}.selection\:bg-primary-container::selection{--tw-bg-opacity:1;background-color:rgb(232 155 92 / var(--tw-bg-opacity, 1))}.selection\:text-on-primary-container::selection{--tw-text-opacity:1;color:rgb(101 51 0 / var(--tw-text-opacity, 1))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-primary-fixed-dim:hover{--tw-bg-opacity:1;background-color:rgb(255 183 127 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#E89B5C\]:hover{--tw-text-opacity:1;color:rgb(232 155 92 / var(--tw-text-opacity, 1))}.hover\:text-stone-800:hover{--tw-text-opacity:1;color:rgb(41 37 36 / var(--tw-text-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-primary-container{--tw-text-opacity:1;color:rgb(232 155 92 / var(--tw-text-opacity, 1))}.dark\:border-stone-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(41 37 36 / var(--tw-border-opacity, 1))}.dark\:bg-stone-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(12 10 9 / var(--tw-bg-opacity, 1))}.dark\:text-orange-400:is(.dark *){--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.dark\:text-stone-200:is(.dark *){--tw-text-opacity:1;color:rgb(231 229 228 / var(--tw-text-opacity, 1))}.dark\:text-stone-400:is(.dark *){--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity, 1))}.dark\:text-stone-500:is(.dark *){--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.dark\:shadow-none:is(.dark *){--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.dark\:hover\:text-stone-200:hover:is(.dark *){--tw-text-opacity:1;color:rgb(231 229 228 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:flex{display:flex}.md\:px-12{padding-left:3rem;padding-right:3rem}}</style></head>
+<body class="bg-background text-on-background font-body-main antialiased selection:bg-primary-container selection:text-on-primary-container" data-mode="connect">
+<!-- TopNavBar -->
+<nav class="bg-[#FAF9F6] dark:bg-stone-950 docked full-width top-0 sticky z-50 border-b border-stone-200/50 dark:border-stone-800 shadow-sm shadow-stone-200/50 dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 md:px-12 h-20 max-w-7xl mx-auto">
+<a class="font-serif text-2xl font-bold text-[#E89B5C] dark:text-orange-400" href="#">二鱼的猫窝</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif text-stone-800 dark:text-stone-200 text-[#E89B5C] border-b-2 border-[#E89B5C] font-semibold hover:text-[#E89B5C] transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="#">字房</a>
+<a class="font-serif text-stone-800 dark:text-stone-200 text-stone-600 dark:text-stone-400 hover:text-[#E89B5C] transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="#">字粮</a>
+<a class="font-serif text-stone-800 dark:text-stone-200 text-stone-600 dark:text-stone-400 hover:text-[#E89B5C] transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="#">金句墙</a>
+<a class="font-serif text-stone-800 dark:text-stone-200 text-stone-600 dark:text-stone-400 hover:text-[#E89B5C] transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="#">关于</a>
+</div>
+<!-- Search Icon -->
+<button class="font-serif text-stone-800 dark:text-stone-200 text-[#E89B5C] dark:text-orange-400 hover:text-[#E89B5C] transition-colors duration-300 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">pets</span>
+</button>
+</div>
+</nav>
+<main class="max-w-reading-width mx-auto px-gutter py-section-gap">
+<!-- Header -->
+<header class="mb-12 text-center">
+<h1 class="font-display-title text-display-title text-on-surface mb-6 leading-tight">《春日的午后与一只橘猫》</h1>
+<div class="flex items-center justify-center gap-2 text-text-secondary font-helper-text text-helper-text">
+<span>散文</span>
+<span class="text-xs">•</span>
+<span>2023.10.24</span>
+<span class="text-xs">•</span>
+<span>3.2k 字</span>
+<span class="text-xs">•</span>
+<span>阅读 8 分钟</span>
+</div>
+</header>
+<!-- Featured Image -->
+<div class="mb-12 rounded-[20px] overflow-hidden shadow-sm">
+<img alt="An orange cat sleeping peacefully in a sunbeam on a wooden floor, soft warm lighting, cozy atmosphere" class="w-full h-auto object-cover aspect-video" data-alt="An orange cat sleeping peacefully in a sunbeam on a wooden floor, soft warm lighting, cozy atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCehCZ1xj4MmZb0gHT1fChnlt-mXArGpgEdZUTtS0l5KC892qD-jEu9c9A8NUhFxyT2JTMqyWnsxvblpguPY2RTtpJsAHTFr4vFB5pUzW4NnFNI9QyYBjmpOWX4b06WxjnEd01oWNjhy9azDSp2eUtLk2cJ6JXgP-JHZQPa9OXdi6NbZivN7dFT9nnXzJuRzS19ku6NNLN890zbO4wOf3qqR1_YQ16TuD7vEG2t4AZDqxufWmZ4ZHWHl5EpX1WqqNGOmqlLo651zUA"/>
+</div>
+<!-- Article Body -->
+<article class="font-body-main text-body-main text-on-surface space-y-8 mb-16">
+<p>
+                阳光透过半开的百叶窗，在原木色的地板上切割出整齐的光栅。春日的微风带着些许暖意，轻轻拂过窗台上的绿萝。这是一天中最静谧的时刻，连空气中漂浮的尘埃也仿佛放慢了舞步。
+            </p>
+<p>
+                就在那片最明亮的光斑里，盘踞着一个毛茸茸的橘色线团。那是我家的猫，它甚至没有一个正经的名字，我们只是简单地叫它“大橘”。此刻，它正以一种极其舒展的姿态侧躺着，腹部随着呼吸均匀地起伏，发出微弱而富有节奏的呼噜声。
+            </p>
+<p>
+                它的毛发在阳光下泛着金色的光泽，柔软得如同刚刚梳理过的羊绒。偶尔，它的耳朵会神经质地抖动一下，似乎在梦境中捕捉到了某只不知死活的飞虫。我放轻脚步走近，生怕惊扰了这份宁静。
+            </p>
+<p>
+                猫的睡眠是这世上最治愈的画面之一。看着它毫无防备地袒露着肚皮，你会觉得这个世界上的一切烦恼都被按下了暂停键。没有截稿日，没有复杂的社交，只有温度适宜的阳光和规律的呼吸声。
+            </p>
+<p>
+                我盘腿在它身边坐下，伸出手指轻轻触碰它温热的肉垫。它并没有醒来，只是下意识地将爪子缩了缩，然后在喉咙里发出了一声含糊不清的呢喃。那一刻，我觉得我和这只猫之间建立了一种奇妙的连接，一种无需言语，只有在这个春日午后才能领会的默契。
+            </p>
+</article>
+<!-- Author's Note -->
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant rounded-[20px] p-card-padding mb-16 relative">
+<div class="absolute -top-4 left-6 bg-surface-pure border border-outline-variant px-4 py-1 rounded-full font-label-capsule text-label-capsule text-on-surface flex items-center gap-1 shadow-sm">
+<span>🐱</span> 写在故事之外
+            </div>
+<p class="font-body-italic text-body-italic text-on-surface-variant italic pt-4">
+                那个下午我原本因为工作压力而焦虑万分，但在看到大橘四仰八叉睡在阳光下的那一刻，突然就释怀了。猫的哲学很简单：既然阳光正好，那不如先睡个好觉。这篇短文记录的不仅是猫的日常，也是我久违的内心平静。
+            </p>
+</div>
+<!-- Interaction -->
+<div class="flex flex-col items-center mb-section-gap">
+<button class="bg-[#E89B5C] text-white hover:bg-primary-fixed-dim transition-colors rounded-[12px] px-8 py-4 font-h2 text-h2 flex items-center gap-3 shadow-sm hover:-translate-y-1 hover:shadow-md duration-300">
+                给二鱼一颗小鱼干 🐟
+                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">42</span>
+</button>
+<p class="mt-4 font-helper-text text-helper-text text-text-secondary">谢谢你的投喂，大橘今晚加餐啦！</p>
+</div>
+<!-- Article Navigation -->
+<div class="flex justify-between items-center border-t border-border-subtle pt-8">
+<a class="group flex flex-col max-w-[45%] text-left" href="#">
+<span class="font-helper-text text-helper-text text-text-secondary flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+                    上一篇
+                </span>
+<span class="font-h2 text-h2 text-on-surface group-hover:text-primary-container transition-colors truncate">
+                    《雨夜与一本旧书》
+                </span>
+</a>
+<a class="group flex flex-col max-w-[45%] text-right" href="#">
+<span class="font-helper-text text-helper-text text-text-secondary flex items-center justify-end gap-1 mb-1">
+                    下一篇
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+<span class="font-h2 text-h2 text-on-surface group-hover:text-primary-container transition-colors truncate">
+                    《阳台上的罗勒》
+                </span>
+</a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#FAF9F6] dark:bg-stone-950 full-width mt-24 border-t border-stone-200/50 dark:border-stone-800 flat no shadows opacity-80 hover:opacity-100 transition-opacity">
+<div class="max-w-4xl mx-auto px-8 py-16 flex flex-col items-center gap-6">
+<div class="font-serif text-lg font-bold text-[#E89B5C]">二鱼的猫窝</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-serif text-stone-500 dark:text-stone-500 text-sm italic text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">归档</a>
+<a class="font-serif text-stone-500 dark:text-stone-500 text-sm italic text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">订阅</a>
+<a class="font-serif text-stone-500 dark:text-stone-500 text-sm italic text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">养猫指南</a>
+<a class="font-serif text-stone-500 dark:text-stone-500 text-sm italic text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">隐私</a>
+</div>
+<div class="font-serif text-stone-500 dark:text-stone-500 text-sm italic text-[#E89B5C] dark:text-orange-400 text-center">
+                © 2024 The Cat's Quill. All rights purr-served.
+            </div>
+</div>
+</footer>
+</body></html>

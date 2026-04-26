@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>字粮 · 养猫系统 - 二鱼的猫窝</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#8c4f16",
+                        "primary-container": "#e89b5c",
+                        "tertiary-fixed-dim": "#afcfad",
+                        "on-surface": "#211a16",
+                        "inverse-primary": "#ffb77f",
+                        "text-secondary": "#8B7E74",
+                        "on-surface-variant": "#534439",
+                        "background-warm": "#FBF7F0",
+                        "on-tertiary-fixed": "#05210b",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#f9ebe4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#6f3900",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#281903",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#2b472d",
+                        "primary-fixed-dim": "#ffb77f",
+                        "tertiary": "#496549",
+                        "tertiary-fixed": "#caebc8",
+                        "accent-yellow": "#F4C95D",
+                        "secondary-container": "#f9dbb7",
+                        "primary-fixed": "#ffdcc3",
+                        "primary": "#8c4f16",
+                        "on-secondary-fixed-variant": "#574329",
+                        "surface-pure": "#FFFFFF",
+                        "outline-variant": "#d8c2b5",
+                        "border-subtle": "#EFE6D8",
+                        "surface-container-highest": "#eee0d8",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fff8f5",
+                        "surface-variant": "#eee0d8",
+                        "secondary": "#705b3e",
+                        "inverse-surface": "#372f2a",
+                        "on-background": "#211a16",
+                        "inverse-on-surface": "#fceee6",
+                        "surface-container-high": "#f3e5de",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#fff1e9",
+                        "outline": "#857468",
+                        "surface-dim": "#e5d7d0",
+                        "secondary-fixed-dim": "#dfc29f",
+                        "surface": "#fff8f5",
+                        "on-secondary-container": "#755f42",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#314d33",
+                        "secondary-fixed": "#fcdeba",
+                        "on-primary-container": "#653300",
+                        "on-primary-fixed": "#2f1500",
+                        "progress-green": "#A8C8A6",
+                        "tertiary-container": "#95b594",
+                        "background": "#fff8f5",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "reading-width": "680px",
+                        "container-max": "1024px",
+                        "gutter": "1.5rem",
+                        "card-padding": "1.5rem",
+                        "section-gap": "4rem"
+                    },
+                    "fontFamily": {
+                        "body-main": ["Noto Serif SC"],
+                        "h1": ["Noto Serif SC"],
+                        "body-italic": ["Noto Serif SC"],
+                        "h2": ["Noto Serif SC"],
+                        "display-title": ["Noto Serif SC"],
+                        "helper-text": ["Noto Serif SC"],
+                        "label-capsule": ["Noto Serif SC"]
+                    },
+                    "fontSize": {
+                        "body-main": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                        "h1": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "body-italic": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                        "h2": ["22px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-title": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "helper-text": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-capsule": ["12px", {"lineHeight": "1", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-warm text-on-background font-body-main selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-[#fdfaf6] dark:bg-stone-950 border-b border-stone-200/50 dark:border-stone-800/50 shadow-[0_4px_20px_-4px_rgba(232,155,92,0.08)] docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center px-6 py-4 max-w-[1024px] mx-auto">
+<div class="text-2xl font-bold font-serif text-stone-800 dark:text-stone-50 flex items-center gap-2">
+<span>二鱼的猫窝</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors scale-95 active:scale-90 transition-transform" href="#">猫窝</a>
+<a class="font-serif text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors scale-95 active:scale-90 transition-transform" href="#">字房</a>
+<a class="font-serif text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors scale-95 active:scale-90 transition-transform" href="#">书架</a>
+<a class="font-serif text-[#E89B5C] border-b-2 border-[#E89B5C] pb-1 font-bold scale-95 active:scale-90 transition-transform" href="#">字粮</a>
+<a class="font-serif text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors scale-95 active:scale-90 transition-transform" href="#">金句墙</a>
+<a class="font-serif text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors scale-95 active:scale-90 transition-transform" href="#">留言</a>
+<a class="font-serif text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors scale-95 active:scale-90 transition-transform" href="#">关于</a>
+</div>
+<div class="flex items-center gap-4 text-[#E89B5C] dark:text-[#f4b383]">
+<button class="hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">pets</span>
+</button>
+<button class="hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">rss_feed</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-gutter py-12">
+<!-- Header -->
+<header class="text-center mb-16 relative">
+<span class="material-symbols-outlined text-primary-container/20 text-6xl absolute top-0 right-1/4 -z-10 rotate-12">pets</span>
+<span class="material-symbols-outlined text-accent-yellow/20 text-5xl absolute bottom-0 left-1/4 -z-10 -rotate-12">cruelty_free</span>
+<h1 class="font-display-title text-display-title text-on-background mb-4">字粮 · 猫咪养成日记</h1>
+<p class="font-body-italic text-text-secondary text-lg">每一个字，都是喂给小猫的一颗粮</p>
+</header>
+<!-- Current Cat Area -->
+<section class="mb-section-gap">
+<div class="bg-gradient-to-br from-surface-bright to-secondary-container/30 rounded-[32px] p-8 md:p-12 shadow-[0_8px_30px_-10px_rgba(140,79,22,0.1)] relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300 border border-border-subtle">
+<!-- Decorative Elements -->
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-40 h-40 bg-accent-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col md:flex-row items-center gap-12 relative z-10">
+<!-- Cat Illustration Placeholder -->
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-surface-pure flex items-center justify-center shadow-inner relative shrink-0 border-4 border-surface-pure overflow-hidden">
+<img alt="Illustration of a confident ginger cat sitting proudly" class="w-full h-full object-cover mix-blend-multiply opacity-90" data-alt="playful illustration of a confident fluffy ginger cat sitting proudly with bright eyes on a warm cream background, digital art style, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqnr8tQUNnVWMUQ4WissZlMCCeEOtA-7TVoBg54zsyKN9_hIr4iZpWDk-SR8IJ0PY6UNWao_6jJEpTltx89Oe0BSKiiPJZaD39ptme2XSIbciGgkyKwP2UwEa4MKHkFKInCAOdvGT5WsOuO50O5S2ZiXAoR5xSSXmjnn68QhP0VA3hr7V2XWpLl36ygz92IvUSwqcyEfakKKlZ18f7aDElV6H4Xbfo4E5dP_CPIlTOHmi5n7EGUuPGzgN7yBFGuuoUP7INTByBWVs"/>
+<!-- Status Badge -->
+<div class="absolute bottom-4 right-4 bg-surface-pure px-4 py-2 rounded-full shadow-md border border-border-subtle flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-capsule text-label-capsule text-on-surface font-bold tracking-wider">阶段：幼猫</span>
+</div>
+</div>
+<!-- Details & Progress -->
+<div class="flex-1 text-center md:text-left space-y-6">
+<h2 class="font-h2 text-h2 text-on-surface">大橘今天也吃得很饱，正在努力长成少年猫呢。</h2>
+<div class="space-y-3 pt-4">
+<div class="flex justify-between items-end">
+<span class="font-helper-text text-helper-text text-text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">edit_document</span> 写作喂食进度
+                                </span>
+<span class="font-h2 text-primary-container font-bold">32,500 <span class="text-sm text-text-secondary font-normal">/ 50,000 字</span></span>
+</div>
+<!-- Progress Bar -->
+<div class="h-4 bg-surface-dim rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-primary-container rounded-full w-[65%] transition-all duration-1000 ease-out relative">
+<div class="absolute inset-0 bg-white/20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.2) 10px, rgba(255,255,255,0.2) 20px);"></div>
+</div>
+</div>
+</div>
+<button class="mt-6 bg-primary-container text-on-primary px-8 py-3 rounded-xl font-bold shadow-md hover:bg-surface-tint hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-lg">edit</span>
+                            去写字赚猫粮
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Growth Timeline -->
+<section class="mb-section-gap px-4">
+<h3 class="font-h2 text-h2 text-on-surface mb-8 text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-text-secondary">timeline</span>
+                成长轨迹
+            </h3>
+<div class="relative max-w-3xl mx-auto">
+<!-- Track Line -->
+<div class="absolute top-1/2 left-0 w-full h-1 bg-surface-dim -translate-y-1/2 rounded-full z-0"></div>
+<!-- Active Track -->
+<div class="absolute top-1/2 left-0 w-[65%] h-1 bg-primary-container -translate-y-1/2 rounded-full z-0 transition-all duration-1000"></div>
+<div class="flex justify-between relative z-10">
+<!-- Node 1 -->
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md ring-4 ring-background">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">egg</span>
+</div>
+<div class="text-center">
+<span class="block font-label-capsule text-label-capsule text-on-surface font-bold">胚胎</span>
+<span class="block font-helper-text text-[10px] text-text-secondary">0</span>
+</div>
+</div>
+<!-- Node 2 -->
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md ring-4 ring-background">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+<div class="text-center">
+<span class="block font-label-capsule text-label-capsule text-on-surface font-bold">奶猫</span>
+<span class="block font-helper-text text-[10px] text-text-secondary">5,000</span>
+</div>
+</div>
+<!-- Node 3 (Active) -->
+<div class="flex flex-col items-center gap-2 group -mt-2">
+<div class="w-14 h-14 rounded-full bg-surface-pure text-primary-container flex items-center justify-center shadow-[0_4px_15px_-3px_rgba(232,155,92,0.3)] ring-4 ring-primary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<div class="text-center">
+<span class="block font-label-capsule text-label-capsule text-primary-container font-bold text-sm">幼猫</span>
+<span class="block font-helper-text text-[10px] text-primary-container font-medium">20,000</span>
+</div>
+</div>
+<!-- Node 4 -->
+<div class="flex flex-col items-center gap-2 group opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-pure text-text-secondary flex items-center justify-center shadow-sm ring-4 ring-background border border-border-subtle">
+<span class="material-symbols-outlined text-sm">cruelty_free</span>
+</div>
+<div class="text-center">
+<span class="block font-label-capsule text-label-capsule text-text-secondary">少年猫</span>
+<span class="block font-helper-text text-[10px] text-text-secondary">40,000</span>
+</div>
+</div>
+<!-- Node 5 -->
+<div class="flex flex-col items-center gap-2 group opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-pure text-text-secondary flex items-center justify-center shadow-sm ring-4 ring-background border border-border-subtle">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+</div>
+<div class="text-center">
+<span class="block font-label-capsule text-label-capsule text-text-secondary">成年猫</span>
+<span class="block font-helper-text text-[10px] text-text-secondary">50,000</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Completed Cats Archive -->
+<section class="mb-section-gap">
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-h2 text-h2 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">home</span>
+                    猫窝 · 已养成的猫
+                </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Completed Cat Card -->
+<article class="bg-surface-pure rounded-[20px] p-6 shadow-sm border border-border-subtle hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300 group">
+<div class="aspect-square rounded-2xl bg-surface-variant overflow-hidden mb-5 relative">
+<img alt="Illustration of a black and white tuxedo cat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="cute stylized illustration of a black and white tuxedo cat resting peacefully, soft warm lighting, creamy pastel background, digital art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqNRkZm-PsLqPKlgDKqNxMXoVhwAvLdrmr3LI2Y58GOxd20hh9bht0LLvv-485BEQMQ8pvJEChKIvwEK3_6mdstT8xzJHH-nmmyppengehq0Gk1jAntxNQ2m3AvR7jYVxPhyn47DbzdyhoMuF-_xm3au5XwVvyKc8WzvM90eYDkQ0ClCOad329KJ9E11MgEindw4S8avvAPyykjlCG4HynkQ6kB93yoVY3VRMj3nWtSWe3xc4u8AHHAUaR82XlWcTnvAcEM9UJaQ"/>
+<div class="absolute top-3 right-3 bg-surface-pure/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-text-secondary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 养成于 2025 年
+                        </div>
+</div>
+<h4 class="font-h2 text-lg text-on-surface mb-2">小黑 (奶牛猫)</h4>
+<div class="space-y-2 mb-6">
+<p class="font-helper-text text-helper-text text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">menu_book</span>
+                            陪我写完了《碎碎念》
+                        </p>
+<p class="font-helper-text text-helper-text text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">history_edu</span>
+                            累计陪伴 5.2 万字
+                        </p>
+</div>
+<button class="w-full bg-surface-pure border border-outline-variant text-on-surface-variant px-4 py-2.5 rounded-xl font-bold hover:bg-surface-bright hover:border-primary-container hover:text-primary-container transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">front_hand</span>
+                        撸猫
+                    </button>
+</article>
+<!-- Empty Slot Placeholder -->
+<div class="bg-surface-pure/50 rounded-[20px] p-6 border-2 border-dashed border-border-subtle flex flex-col items-center justify-center text-center min-h-[400px] opacity-70">
+<span class="material-symbols-outlined text-4xl text-outline-variant mb-4">add_circle</span>
+<h4 class="font-h2 text-lg text-text-secondary mb-2">空置的猫窝</h4>
+<p class="font-helper-text text-helper-text text-outline">继续写作，孵化下一只小猫吧</p>
+</div>
+</div>
+</section>
+<!-- Bottom Stats Bar -->
+<section class="bg-surface-pure rounded-[24px] p-6 md:p-8 shadow-sm border border-border-subtle flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bar_chart</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">累计养成</h4>
+<p class="font-h2 text-primary-container">1 <span class="text-sm font-normal text-text-secondary">只猫</span></p>
+</div>
+</div>
+<div class="hidden md:block w-px h-12 bg-border-subtle"></div>
+<div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">累计字数</h4>
+<p class="font-h2 text-secondary">8.2 <span class="text-sm font-normal text-text-secondary">万字</span></p>
+</div>
+</div>
+<div class="hidden md:block w-px h-12 bg-border-subtle"></div>
+<div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">最长连续写作</h4>
+<p class="font-h2 text-tertiary">15 <span class="text-sm font-normal text-text-secondary">天</span></p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800 w-full mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-[1024px] mx-auto gap-4">
+<div class="text-lg font-serif font-semibold text-[#E89B5C] dark:text-[#f4b383]">
+                © 二鱼的猫窝 · 书写与养猫的平和岁时记
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-serif text-sm text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100 transition-all" href="#">RSS订阅</a>
+<a class="font-serif text-sm text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100 transition-all" href="#">社交媒体</a>
+<a class="font-serif text-sm text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100 transition-all" href="#">站点地图</a>
+<a class="font-serif text-sm text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100 transition-all" href="#">关于作者</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>首页 - 二鱼的猫窝</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#8c4f16",
+                        "primary-container": "#e89b5c",
+                        "tertiary-fixed-dim": "#afcfad",
+                        "on-surface": "#211a16",
+                        "inverse-primary": "#ffb77f",
+                        "text-secondary": "#8B7E74",
+                        "on-surface-variant": "#534439",
+                        "background-warm": "#FBF7F0",
+                        "on-tertiary-fixed": "#05210b",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#f9ebe4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#6f3900",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#281903",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#2b472d",
+                        "primary-fixed-dim": "#ffb77f",
+                        "tertiary": "#496549",
+                        "tertiary-fixed": "#caebc8",
+                        "accent-yellow": "#F4C95D",
+                        "secondary-container": "#f9dbb7",
+                        "primary-fixed": "#ffdcc3",
+                        "primary": "#8c4f16",
+                        "on-secondary-fixed-variant": "#574329",
+                        "surface-pure": "#FFFFFF",
+                        "outline-variant": "#d8c2b5",
+                        "border-subtle": "#EFE6D8",
+                        "surface-container-highest": "#eee0d8",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fff8f5",
+                        "surface-variant": "#eee0d8",
+                        "secondary": "#705b3e",
+                        "inverse-surface": "#372f2a",
+                        "on-background": "#211a16",
+                        "inverse-on-surface": "#fceee6",
+                        "surface-container-high": "#f3e5de",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#fff1e9",
+                        "outline": "#857468",
+                        "surface-dim": "#e5d7d0",
+                        "secondary-fixed-dim": "#dfc29f",
+                        "surface": "#fff8f5",
+                        "on-secondary-container": "#755f42",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#314d33",
+                        "secondary-fixed": "#fcdeba",
+                        "on-primary-container": "#653300",
+                        "on-primary-fixed": "#2f1500",
+                        "progress-green": "#A8C8A6",
+                        "tertiary-container": "#95b594",
+                        "background": "#fff8f5",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.25rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "reading-width": "680px",
+                        "container-max": "1024px",
+                        "gutter": "1.5rem",
+                        "card-padding": "1.5rem",
+                        "section-gap": "4rem"
+                    },
+                    "fontFamily": {
+                        "body-main": ["Noto Serif SC"],
+                        "h1": ["Noto Serif SC"],
+                        "body-italic": ["Noto Serif SC"],
+                        "h2": ["Noto Serif SC"],
+                        "display-title": ["Noto Serif SC"],
+                        "helper-text": ["Noto Serif SC"],
+                        "label-capsule": ["Noto Serif SC"]
+                    },
+                    "fontSize": {
+                        "body-main": ["16px", { "lineHeight": "1.8", "fontWeight": "400" }],
+                        "h1": ["28px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-italic": ["16px", { "lineHeight": "1.8", "fontWeight": "400" }],
+                        "h2": ["22px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-title": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "helper-text": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-capsule": ["12px", { "lineHeight": "1", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            background-color: #FBF7F0;
+        }
+    </style>
+</head>
+<body class="font-body-main text-on-surface antialiased bg-background-warm selection:bg-primary-container selection:text-white pb-20">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-[#fdfaf6] dark:bg-stone-950 border-b border-stone-200/50 dark:border-stone-800/50 shadow-[0_4px_20px_-4px_rgba(232,155,92,0.08)] docked full-width top-0 sticky z-50 font-serif text-stone-800 dark:text-stone-200">
+<div class="flex justify-between items-center px-6 py-4 max-w-[1024px] mx-auto">
+<div class="text-2xl font-bold font-serif text-stone-800 dark:text-stone-50 flex items-center gap-2">
+                猫窝
+            </div>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#E89B5C] border-b-2 border-[#E89B5C] pb-1 font-bold hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">猫窝</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">字房</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">书架</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">字粮</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">金句墙</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">留言</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#E89B5C] transition-colors hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">关于</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-4 text-[#E89B5C] dark:text-[#f4b383]">
+<button class="hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">pets</span>
+</button>
+<button class="hover:text-[#E89B5C] dark:hover:text-[#f4b383] transition-all duration-300 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">rss_feed</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="max-w-[1024px] mx-auto px-gutter mt-12 space-y-section-gap">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center gap-12 relative">
+<!-- Decorative paw prints in background -->
+<div class="absolute -top-10 -left-10 text-primary-container/10 rotate-[-15deg] pointer-events-none">
+<span class="material-symbols-outlined text-6xl">pets</span>
+</div>
+<div class="absolute bottom-10 -right-10 text-primary-container/10 rotate-[25deg] pointer-events-none">
+<span class="material-symbols-outlined text-8xl">pets</span>
+</div>
+<!-- Avatar -->
+<div class="flex-shrink-0 relative group">
+<div class="absolute inset-0 bg-primary-container rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+<img alt="Avatar" class="w-48 h-48 rounded-full object-cover border-4 border-surface-pure shadow-lg relative z-10 transition-transform duration-500 group-hover:scale-105" data-alt="Playful kitten illustration with warm lighting and soft textures, perfectly circular" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzFQbkd8rKRj_MfPrkSklEjSdcygAbEGZsWmEgm4x_mSHxRQjwpHczwbEDhT2zO5mIgS7s82LT3qN5_3oT9FavccC7PoCB2OPoVAXWWhfRndEbp_6L6usOAunSGBw9ICbpsbWHY_MTT2u_awnSboU5GIlfErUuuIivJtOZowlfObtJWOnDuV76XzFBckXuUpu4WOfpQYtjkKUIr3GkS7pZrW6V6fTBTJEhMvyvlvt8g3OvIaPuLqwTs-F7SDRDpHB25Kfft8d6MSA"/>
+</div>
+<!-- Intro -->
+<div class="flex-col justify-center text-center md:text-left z-10">
+<h1 class="font-display-title text-display-title text-on-surface mb-4">
+                    笔名：二鱼
+                </h1>
+<p class="font-h2 text-h2 text-text-secondary mb-6 max-w-lg">
+                    一位写作者用文字喂养小猫的地方。
+                </p>
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+<div class="flex items-center gap-2 bg-surface-pure px-4 py-2 rounded-full shadow-sm border border-border-subtle">
+<span class="material-symbols-outlined text-primary-container text-xl fill">pets</span>
+<span class="font-helper-text text-helper-text text-on-surface-variant">正在养第 2 只猫</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-pure px-4 py-2 rounded-full shadow-sm border border-border-subtle">
+<span class="material-symbols-outlined text-tertiary-container text-xl">edit_document</span>
+<span class="font-helper-text text-helper-text text-on-surface-variant">累计写作 8.2 万字</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Current Cat Progress Card -->
+<section class="max-w-3xl mx-auto">
+<div class="bg-surface-pure rounded-2xl shadow-[0_8px_30px_-10px_rgba(140,79,22,0.1)] p-8 text-center relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+<!-- Subtle gradient background -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-surface-container-low via-surface-pure to-surface-pure opacity-70 pointer-events-none"></div>
+<div class="relative z-10">
+<div class="w-32 h-32 mx-auto mb-6 bg-surface-container-high rounded-full overflow-hidden border-4 border-white shadow-md">
+<img alt="Cat named Daju" class="w-full h-full object-cover" data-alt="Cute orange tabby kitten looking up with big eyes, soft warm studio lighting, white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYv_OzMoWWjefZzRdxx5q3akXrmbtQtlfgX5qKuRaY3HMmWFwPw7pnm5I9vYsVEe79GZahmHNWfthpja9-w57bJf1u7_hlEt0bF2wLWGF_B_JghCtbOUYwhcyAZU3fugAIe6LwMeD1mO2mD317FxhFq-OgRSAyCqpbXJ-fGvHr0g6gN_oluBlPCsqUeFIe9zD7U0VdhGSknE2NQH_iWD78JTWZwbtquaUiGJJY-tKf1eiCtFGlpUX8NhPaYYTi7ru4nunbvMHRQKg"/>
+</div>
+<h2 class="font-h2 text-h2 text-on-surface mb-2">大橘</h2>
+<p class="font-helper-text text-helper-text text-text-secondary mb-8">幼猫期 · 正在茁壮成长</p>
+<!-- Progress Bar -->
+<div class="max-w-md mx-auto mb-8">
+<div class="flex justify-between mb-2">
+<span class="font-label-capsule text-label-capsule text-primary-container">进度</span>
+<span class="font-label-capsule text-label-capsule text-text-secondary">32,500 / 50,000 字粮</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden shadow-inner">
+<div class="h-full bg-primary-container rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+<button class="bg-primary-container hover:bg-surface-tint text-on-primary font-body-main px-8 py-3 rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 mx-auto">
+<span class="material-symbols-outlined text-[20px]">ink_pen</span>
+                        去字房写字
+                    </button>
+</div>
+</div>
+</section>
+<!-- Monthly Goal -->
+<section>
+<div class="bg-surface-pure rounded-2xl shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] p-6 flex flex-col md:flex-row items-center justify-between gap-6 border border-border-subtle transition-transform duration-300 hover:-translate-y-1">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">flag</span>
+</div>
+<div>
+<h3 class="font-h2 text-h2 text-on-surface text-base md:text-lg mb-1">本月写作目标</h3>
+<p class="font-helper-text text-helper-text text-text-secondary">已完成 6,200 字</p>
+</div>
+</div>
+<div class="flex-grow max-w-md w-full">
+<div class="flex justify-end mb-2">
+<span class="font-label-capsule text-label-capsule text-tertiary">目标 10,000 字</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden shadow-inner">
+<div class="h-full bg-progress-green rounded-full" style="width: 62%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Works -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-h2 text-h2 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">auto_stories</span>
+                    最新作品
+                </h2>
+<a class="font-helper-text text-helper-text text-primary-container hover:underline decoration-dotted flex items-center gap-1" href="#">
+                    查看全部 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="bg-surface-pure rounded-2xl p-6 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col h-full">
+<div class="mb-4">
+<span class="inline-block px-3 py-1 bg-surface-container-high text-on-surface-variant font-label-capsule text-label-capsule rounded-full mb-3">小说</span>
+<h3 class="font-h2 text-h2 text-on-surface text-lg leading-tight mb-3">《在那座山丘后面》</h3>
+<p class="font-body-main text-body-main text-text-secondary text-sm line-clamp-3">
+                            童年的记忆总是在夏日午后最清晰，那座被荒草覆盖的山丘，埋藏着太多不为人知的秘密。当我们再次攀登时，风依然是咸的...
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-border-subtle flex justify-between items-center">
+<span class="font-helper-text text-helper-text text-text-secondary">4,200 字</span>
+<span class="font-helper-text text-helper-text text-text-secondary">3 天前</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-pure rounded-2xl p-6 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col h-full">
+<div class="mb-4">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container font-label-capsule text-label-capsule rounded-full mb-3">散文</span>
+<h3 class="font-h2 text-h2 text-on-surface text-lg leading-tight mb-3">《下午三点的猫粮》</h3>
+<p class="font-body-main text-body-main text-text-secondary text-sm line-clamp-3">
+                            阳光正好打在地板的纹理上，大橘伸了个长长的懒腰。倒猫粮的声音是这个屋子里最清脆的音符，它连接着两个孤独灵魂的日常共鸣...
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-border-subtle flex justify-between items-center">
+<span class="font-helper-text text-helper-text text-text-secondary">1,800 字</span>
+<span class="font-helper-text text-helper-text text-text-secondary">1 周前</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-pure rounded-2xl p-6 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col h-full">
+<div class="mb-4">
+<span class="inline-block px-3 py-1 bg-surface-dim text-on-surface font-label-capsule text-label-capsule rounded-full mb-3">评论</span>
+<h3 class="font-h2 text-h2 text-on-surface text-lg leading-tight mb-3">《雨后的无声叙事》</h3>
+<p class="font-body-main text-body-main text-text-secondary text-sm line-clamp-3">
+                            看完那部关于离别的独立电影，窗外正好下了一场阵雨。导演用大段的留白代替了哭泣，这种隐忍的表达方式反而让悲伤更具穿透力...
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-border-subtle flex justify-between items-center">
+<span class="font-helper-text text-helper-text text-text-secondary">2,500 字</span>
+<span class="font-helper-text text-helper-text text-text-secondary">2 周前</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Recently Read -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-h2 text-h2 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">library_books</span>
+                    最近读完
+                </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Book 1 -->
+<div class="flex gap-4 bg-surface-pure rounded-2xl p-4 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-transform duration-300 hover:-translate-y-1">
+<img alt="Book Cover" class="w-20 h-28 object-cover rounded-md shadow-sm flex-shrink-0" data-alt="Classic literature book cover with elegant typography on white background, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAalkUF_8LtolzEKYU4WkRVNHmEfcnPhTqWMc57jsAVTH35PGvw-D9bbiJ1Bl5_62Z7BHIE_M1qtGecyqN3NTPwBRRUSKoV-eLJFQcE7fAfaiKhWcv9CASgiIq3tZEoiFJDCtoeC3pOYeaY7j3gRE1rsRUoXES7memU9kO0Al1SiD-iNmV4R_7KmS-LVh_rBsNPx2B1WkdOsBWQialZalX6Y5tmIrDjeFkaDUNdu4gaxB1U8M-2lKunYmtwvC9-6FteAQCvzt5ui1I"/>
+<div class="flex flex-col">
+<h3 class="font-h2 text-h2 text-on-surface text-base mb-1">《包法利夫人》</h3>
+<div class="flex text-primary-container mb-2 text-sm">
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+</div>
+<p class="font-helper-text text-helper-text text-text-secondary text-xs line-clamp-3">
+                            福楼拜的手术刀般精准的描写，把欲望的虚妄解剖得淋漓尽致。浪漫主义的悲歌。
+                        </p>
+</div>
+</div>
+<!-- Book 2 -->
+<div class="flex gap-4 bg-surface-pure rounded-2xl p-4 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-transform duration-300 hover:-translate-y-1">
+<img alt="Book Cover" class="w-20 h-28 object-cover rounded-md shadow-sm flex-shrink-0" data-alt="Minimalist book cover featuring a snowy landscape or subtle winter elements, neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_9S7h5VZZxc3lwjF5PRxDPT07vhrgJuL964sRY_JiB_9lS4tWs1ab5Cls-e7Vu4Az680AQAYO63gTZXpppuePhALTkD29oGE5_xf36qXoytILjyuTCKngbUq8AjSxBIKcRvppKG_f2VafrFziwhS0rddx4E8EF-7kZjlgrqPm13bgFWN0TqmeyqIhRY60hBy7zKRXhdLN6B3BX6ke9BnHveckfS5aKo4zFec2AflFinDmQLd6o14bihlhHzrHLg2vkPdU8WS1lJk"/>
+<div class="flex flex-col">
+<h3 class="font-h2 text-h2 text-on-surface text-base mb-1">《冬牧场》</h3>
+<div class="flex text-primary-container mb-2 text-sm">
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined text-[16px]">set_meal</span>
+</div>
+<p class="font-helper-text text-helper-text text-text-secondary text-xs line-clamp-3">
+                            李娟的文字总能带来极大的抚慰，在严酷的自然环境中，人的坚韧和温情闪闪发光。
+                        </p>
+</div>
+</div>
+<!-- Book 3 -->
+<div class="flex gap-4 bg-surface-pure rounded-2xl p-4 shadow-[0_4px_20px_-8px_rgba(140,79,22,0.08)] border border-border-subtle transition-transform duration-300 hover:-translate-y-1">
+<img alt="Book Cover" class="w-20 h-28 object-cover rounded-md shadow-sm flex-shrink-0" data-alt="Contemporary novel book cover with abstract warm color blocks, artistic design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjd0pi15wsXPNoGpxHXNTK9LObt9-6aaodnCkfAZV3BNxC68jUyxnL4WkfH4gGrwcj4IVkHdcaYiu4p79PTxzePG1wPwM0QjNMgEYKeg8B9YP5cDdzSzpCiUZinEIxguK2wvByY9kAhXPfJ0dytomAtu6Aq39ts0fFNPoND1hnnxSIhzt8fwjRzcjHxxL1MQQUg_rilGFEjQg-jeQW8J9vHJWshyWQXyzm_UwvTKh6I-MeJjB3wLlJLul7ZVxzp8Vn0340EK1q1o"/>
+<div class="flex flex-col">
+<h3 class="font-h2 text-h2 text-on-surface text-base mb-1">《夜晚的潜水艇》</h3>
+<div class="flex text-primary-container mb-2 text-sm">
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+<span class="material-symbols-outlined fill text-[16px]">set_meal</span>
+</div>
+<p class="font-helper-text text-helper-text text-text-secondary text-xs line-clamp-3">
+                            想象力在陈春成的笔下肆意流淌，像是在梦境与现实的边界游走，文字精妙绝伦。
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-stone-100 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800 flat w-full mt-20 font-serif text-sm text-stone-500 dark:text-stone-400">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-[1024px] mx-auto gap-4">
+<div class="text-lg font-serif font-semibold text-[#E89B5C] dark:text-[#f4b383]">
+                猫窝
+            </div>
+<div class="text-center md:text-left">
+                © 二鱼的猫窝 · 书写与养猫的平和岁时记
+            </div>
+<div class="flex gap-6">
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100" href="#">RSS订阅</a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100" href="#">社交媒体</a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100" href="#">站点地图</a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-dotted opacity-80 hover:opacity-100" href="#">关于作者</a>
+</div>
+</div>
+</footer>
+</body></html>
